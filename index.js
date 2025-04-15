@@ -414,7 +414,7 @@ function updateWallet() {
   const native = walletInfo.balanceNative ? Number(walletInfo.balanceNative).toFixed(4) : "0.0000";
   const weth = walletInfo.balanceWeth ? Number(walletInfo.balanceWeth).toFixed(4) : "0.0000";
   const content = `┌── Address   : {bright-yellow-fg}${shortAddress}{/bright-yellow-fg}
-│   ├── ETH Native : {bright-green-fg}${native}{/bright-green-fg}
+│   ├── ETH        : {bright-green-fg}${native}{/bright-green-fg}
 │   └── WETH       : {bright-green-fg}${weth}{/bright-green-fg}
 └── Network        : {bright-cyan-fg}${NETWORK_NAME}{/bright-cyan-fg}`;
   walletBox.setContent(content);
